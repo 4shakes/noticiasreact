@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   consultarNoticias = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3a71880af2cd409cbc4e3d4fec8a39f2`;
+    const url = `https://newsapi.org/v2/top-headlines?country=co&apiKey=3a71880af2cd409cbc4e3d4fec8a39f2`;
 
     const respuesta = await fetch(url);
     const noticias = await respuesta.json();
